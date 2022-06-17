@@ -1,0 +1,58 @@
+body {
+    width: 100px;
+}
+.orange {
+    background-color: orange;
+    border: 1px solid orange;
+    width: 400px;
+    height: 200px;
+}
+.yellow {
+    background-color: yellow;
+    border: 1px solid yellow;
+    width: 200px;
+    height: 200px;
+}
+.green {
+    background-color: green;
+    border: 1px solid green;
+    width: 280px;
+    height: 240px;
+}
+.blue-one {
+    background-color: aqua;
+    border: 1px solid aqua;
+    width: 320px;
+    height: 100px;
+}
+.blue-two {
+    background-color: aqua;
+    border: 1px solid aqua;
+    width: 320px;
+    height: 120px;
+}
+.container {
+    width: 80%;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+    "one one two"
+    "three four four"
+    "three five five";
+  
+ }
+.block:nth-child(1) {
+    grid-area: one;
+}
+.block:nth-child(2) {
+    grid-area: two;
+}
+.block:nth-child(3) {
+    grid-area: three;
+}
+.block:nth-child(4) {
+    grid-area: four;
+}
+.block:nth-child(5) {
+    grid-area: five;
+}
